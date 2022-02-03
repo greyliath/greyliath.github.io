@@ -1,0 +1,32 @@
+title:             Schrecknet | Neomates
+email:             admin@neomat.es
+description:       Schrecknet 2.0
+author:            C0RV1$
+#url:               "localhost:4000"
+url:               "neomat.es"
+baseurl:
+
+# Social Profiles
+#twitter_username:  SBootstrap
+#github_username:   BlackrockDigital
+#facebook_username: StartBootstrap
+
+# Build settings
+markdown:          kramdown
+paginate:          10
+paginate_path:     "/posts/page:num/"
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-minimagick
+
+
+mini_magick:
+  thumbnail:
+    source: img/photos/original
+    destination: img/photos/thumbnail
+    resize: "100x100"
+  medium:
+    source: img/photos/original
+    destination: img/photos/medium
+    resize: "600x400"
